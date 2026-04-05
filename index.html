@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Apology</title>
+    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scene">
+        
+        <!-- SCENE 1: The Press Me Button -->
+        <div id="view1" class="view active">
+            <button id="pressMeBtn" class="primary-btn">Press Me</button>
+        </div>
+
+        <!-- SCENE 2: The Envelope & Open Me Button -->
+        <div id="view2" class="view">
+            <div class="envelope-container" id="envelopeContainer">
+                <div class="envelope-back"></div>
+                
+                <div class="letter" id="apologyCard">
+                    <div class="letter-content">
+                        <h1 class="card-title">I'm so sorry.</h1>
+                    <p class="card-text">Dear Ugo 💖🌹,</p>
+                    <p class="card-text">I wanted to reach out and sincerely apologize. My actions recently were not okay, and I deeply regret causing any hurt. You mean a lot to me, and I hope we can find a way to move past this.</p>
+                    <p class="card-text form-sign">Love,<br><strong>from one Techy tozo</strong></p>
+                    
+                    <div class="action-section">
+                        <button id="forgiveBtn" class="secondary-btn">I Forgive You ✨</button>
+                        <p id="forgiveMsg" class="success-msg"></p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="envelope-front"></div>
+                <div class="envelope-flap" id="flap"></div>
+            </div>
+
+            <button id="openMeBtn" class="primary-btn">Open Me</button>
+        </div>
+
+    </div>
+
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js?v=11"></script>
+</body>
+</html>
